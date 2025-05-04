@@ -1,5 +1,5 @@
 const express = require('express')
-const app =expres
+const app =express()
 
 /// application levl settings
 app.set('view engine', 'ejs')
