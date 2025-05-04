@@ -48,12 +48,12 @@ res.json(product)
         },
                 
     ]
-const getSingleProduct =     product.find(product=> product.id ====productId)
+const getSingleProduct = product.find(product=> product.id ====productId)
             if(getSingleProduct){
                 res.send(getSingleProduct)
             }
             else{
-                res.status(404).send('product is not found plase try with')
+                res.status(404).send("product is not found plasae try with diffrent id")
             }
     })
 
