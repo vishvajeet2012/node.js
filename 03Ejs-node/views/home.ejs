@@ -1,0 +1,14 @@
+<%- include('compo/header.ejs') %>
+
+<h1>welcome to our home page
+</h1>
+
+<label>
+    list of products
+</label>
+<!-- list of product here -->
+<ul> 
+    <% products.forEach(product => { %>
+        <li><%- product.label %></li>
+    <% }) %>
+</ul>
