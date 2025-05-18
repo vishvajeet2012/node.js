@@ -1,5 +1,5 @@
 const  mongoose  = require('mongoose')
-mongoose.connect("mongodb+srv://vishu:passwordhai@cluster0.xirmxjd.mongodb.net/").then(()=>console.log("database Conect successfully")).then((e)=>console.log(e))
+mongoose.connect("mongodb+srv://vishu:0zWuZ4jUBvQMUUE8@cluster0.xirmxjd.mongodb.net/").then(()=>console.log("database Conect successfully")).then((e)=>console.log(e))
 
 
 const useSchema = new mongoose.Schema({
@@ -24,12 +24,9 @@ const newUser = await User.create({
 })
     }catch(e){
         console.log("Error-> ", e);
-        
-    } finally{
+          } finally{
         await  mongoose.connection.close()/// closethe 
-    }
+        }
     
 }
-
-
 runQueryExample()
