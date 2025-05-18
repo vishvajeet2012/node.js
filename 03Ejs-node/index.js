@@ -19,12 +19,10 @@ const products = [
 
     app.get('/',(req,res)=>{
         res.render('home',{title:"home", products:products})
-        
-    })
-
+     })
     app.get('/about',(req,res)=>{
         res.render('about',{title:"about" ,products:products})
-    })
-
-
+     })
     app.listen(5050,()=>console.log("server is running on port 5050"))
+
+        
