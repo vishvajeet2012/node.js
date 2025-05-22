@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose'); // ✅ Import mongoose
 const app = express();
-
+const bookRoutes = require('./routes/book-routes')
 const connectDB = async () => {
   try {
     await mongoose.connect("mongodb+srv://vishu:0zWuZ4jUBvQMUUE8@cluster0.xirmxjd.mongodb.net/");
@@ -12,8 +12,9 @@ const connectDB = async () => {
   }
 };
 
-connectDB(); // ✅ Call the DB connection function
+  app.use("/api/books",bookRoutes)
 
+connectDB(); // Call the DB connection function
 // Middleware to parse JSON
 app.use(express.json());
 
