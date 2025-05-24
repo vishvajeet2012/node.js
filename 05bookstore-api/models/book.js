@@ -19,11 +19,6 @@ const newSchema = new mongoose.Schema({
  price: { type: Number, },
   genre: [String],
   createdAt: { type: Date, default: Date.now },
-
-
-
-
-
 });
 
 module.exports=mongoose.model("book",newSchema)

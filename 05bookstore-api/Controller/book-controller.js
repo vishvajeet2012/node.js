@@ -16,11 +16,7 @@ const Addbook = async(req,res)=>{
                         success:true,
                         data:newBook,
                         message:"book created successfully"
-                    })
-
-
-                }
-
+                    }) }
 }catch(e){
         console.log(e)
         res.status(500).json({
@@ -40,10 +36,6 @@ const updateSinglebook = async(req,res)=>{
 const deleteBook = async(req,res)=>{
     
 }
-
-
-
-
 
 module.exports= {
     getallbook,
