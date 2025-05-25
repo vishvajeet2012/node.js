@@ -23,9 +23,7 @@ catch(e){
         message:"unauthorized"
     })
 }
-
-
-    next()
+next()
 
 }
 module.exports=authMiddleware
