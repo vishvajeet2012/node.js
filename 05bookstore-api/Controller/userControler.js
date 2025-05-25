@@ -1,9 +1,12 @@
 const userSchema = require("../models/userModel")
 const bcrypt = require("bcrypt")
+const jwtToekn = require("jsonwebtoken")
+
 const registorUser = async (req, res) => {
     try {
         const { userName, email, password, role } = req.body;
-console.log(req.body)
+        console.log(req.body)
+
         //// check if user alreday exits
         const checkuserIfexits = await userSchema.findOne({
             $or: [{ email: email }, { userName: userName }]
@@ -64,10 +67,14 @@ const loginUser = async(req,res)=>{
             });
         }
 
+        //// create user token 
+        const accessToken = jwtToekn.sign({id:user._id}, process.env.JWT_SECRET || "defaultsecret", {expiresIn: "1d"});
+
         //// login success
         return res.status(200).json({
             success: true,
             message: "login successfull",
+            accessToken: accessToken,
             user: {
                 userName: user.userName,
                 email: user.email,
@@ -83,6 +90,5 @@ const loginUser = async(req,res)=>{
         });
     }
 }
-
 
 module.exports= {registorUser,loginUser}
