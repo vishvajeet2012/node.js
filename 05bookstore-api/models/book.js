@@ -16,7 +16,7 @@ const newSchema = new mongoose.Schema({
     trim: true,
   },
 
- price: { type: Number, },
+ price: { type: String, },
   genre: [String],
   createdAt: { type: Date, default: Date.now },
 });
