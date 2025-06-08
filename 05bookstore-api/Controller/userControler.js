@@ -68,7 +68,7 @@ const loginUser = async(req,res)=>{
         }
 
         //// create user token 
-        const accessToken = jwtToekn.sign({id:user._id}, process.env.JWT_SECRET || "defaultsecret", {expiresIn: "1d"});
+        const accessToken = jwtToekn.sign({userId:user._id}, process.env.JWT_SECRET || "defaultsecret", {expiresIn: "1d"});
 
         //// login success
         return res.status(200).json({

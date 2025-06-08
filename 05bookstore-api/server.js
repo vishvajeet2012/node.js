@@ -3,6 +3,7 @@ const mongoose = require('mongoose'); // ✅ Import mongoose
 const app = express();
 const bookRoutes = require('./routes/book-routes')
 const authRoutes = require('./routes/authroutes')
+const uploadImageRoutes =require('./routes/imageRotes')
 const connectDB = async () => {
   try {
     await mongoose.connect("mongodb+srv://vishu:0zWuZ4jUBvQMUUE8@cluster0.xirmxjd.mongodb.net/");
@@ -14,7 +15,7 @@ const connectDB = async () => {
 };
 app.use('/api',authRoutes)
   app.use("/api/books",bookRoutes)
-
+app.use("/images",uploadImageRoutes)
 connectDB(); // Call the DB connection function
 // Middleware to parse JSON
 app.use(express.json());
