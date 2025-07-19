@@ -15,7 +15,7 @@ const configureCors= (app)=>{
             methods:['GET', 'POST', 'PUT', 'DELETE'],
             allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With',"Accept-Version"],
             exposedHeaders:[`X-Total-Count`, `X-Pagination-Page`, `X-Pagination-Page-Size`],
-            credentials:true,// Allow cookies to be sent with requests,// enable support fo cookies
+          //  credentials:true,// Allow cookies to be sent with requests,// enable support fo cookies
             preflightContinue:false, // Pass the CORS preflight response to the next handler
             maxAge: 600, // Cache preflight response for 10 minutes ->avoid  sending option  requests multiople times
             optionsSuccessStatus: 204 // Use 204 for successful OPTIONS requests
