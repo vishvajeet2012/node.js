@@ -51,14 +51,16 @@ async function redisDataStructure() {
             ///// set -> SADD, SREM, SMEMBERS, SISMEMBER
           //  await client.del('usernickName'); // Clear set if already exists
 
-        await client.sAdd('user:nickNames',['shukla', 'ritik', 'vishvajeet']);
+        await client.sAdd('user:nickNames',['shukla', 'ritik', 'vishvajeet', "xyz"]);
         const tags = await client.sMembers('user:nickNames');
         console.log('Tags:', tags); // Should log all tags in the set
 
                 const  isVishvajeetMember = await client.sIsMember('user:nickNames', 'vishvajeet');
                 console.log('Is Vishvajeet a member?', isVishvajeetMember); // Should log true if 'vishvajeet' is in the set
 
-        await client.sRem("")
+        await client.sRem("user:nickNames", "xyz");
+        const updatedTags = await client.sMembers('user:nickNames');
+        console.log('Updated Tags:', updatedTags); // Should log all tags after removal
 
     
     }catch (error) {
