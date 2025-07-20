@@ -29,25 +29,36 @@ async function redisDataStructure() {
             const [emailValue, ageValue, countryValue] = await client.mGet(['name:email', 'name:age', 'name:country']);
             console.log(`Email: ${emailValue}, Age: ${ageValue}, Country: ${countryValue}`);
 
-
-
+              
             /// list -> lPush , rpop, lRange, rpush, lpop, lindex, llen
+         await client.del('notes'); // Clear list if already exists
+
+         await client.lPush('notes',['first note', 'second note', 'third note']);
+           const notes = await client.lRange('notes', 0, -1);
+          console.log('Notes:', notes); // Should log all notes in the list
 
 
-            await client.lPush('notes',['first note', 'second note', 'third note']);
-            const notes = await client.lRange('notes', 0, -1);
-            console.log('Notes:', notes); // Should log all notes in the list
-
-
-            
-
-
-
-
+  const firstNote = await client.lPop('notes');
+                console.log('First Note:', firstNote); // Should log 'first note' if it exists
 
 
 
+                const reamaingTasks = await client.lRange('notes', 0, -1);
+                console.log('Remaining Notes:', reamaingTasks); // Should log remaining notes in the list
 
+
+
+            ///// set -> SADD, SREM, SMEMBERS, SISMEMBER
+          //  await client.del('usernickName'); // Clear set if already exists
+
+        await client.sAdd('user:nickNames',['shukla', 'ritik', 'vishvajeet']);
+        const tags = await client.sMembers('user:nickNames');
+        console.log('Tags:', tags); // Should log all tags in the set
+
+                const  isVishvajeetMember = await client.sIsMember('user:nickNames', 'vishvajeet');
+                console.log('Is Vishvajeet a member?', isVishvajeetMember); // Should log true if 'vishvajeet' is in the set
+
+        await client.sRem("")
 
     
     }catch (error) {
