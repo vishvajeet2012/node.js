@@ -17,7 +17,7 @@ client.on('connect', () => {
 
 async function redisDataStructure() {
     try {
-                /// string -> set -> get-> MSET ,MGET
+////////////////////////////////////// string -> set -> get-> MSET ,MGET////////////////////////////////////////////////
 
         await client.connect();
 
@@ -29,8 +29,12 @@ async function redisDataStructure() {
             const [emailValue, ageValue, countryValue] = await client.mGet(['name:email', 'name:age', 'name:country']);
             console.log(`Email: ${emailValue}, Age: ${ageValue}, Country: ${countryValue}`);
 
-              
-            /// list -> lPush , rpop, lRange, rpush, lpop, lindex, llen
+
+
+////////////////////// list -> lPush , rpop, lRange, rpush, lpop, lindex, llen//////////////////////////////
+
+
+
          await client.del('notes'); // Clear list if already exists
 
          await client.lPush('notes',['first note', 'second note', 'third note']);
@@ -48,7 +52,14 @@ async function redisDataStructure() {
 
 
 
-            ///// set -> SADD, SREM, SMEMBERS, SISMEMBER
+
+
+///////////////// ///// set -> SADD, SREM, SMEMBERS, SISMEMBER////////////////////////////////////
+
+
+
+
+
           //  await client.del('usernickName'); // Clear set if already exists
 
         await client.sAdd('user:nickNames',['shukla', 'ritik', 'vishvajeet', "xyz"]);
