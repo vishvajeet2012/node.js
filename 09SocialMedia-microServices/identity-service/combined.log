@@ -1,0 +1,68 @@
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:06:08.790Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:06:09.905Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:06:14.184Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:06:15.153Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:08:51.991Z"}
+{"level":"info","message":"req body undefined","service":"identity-service","timestamp":"2025-08-10T13:08:51.993Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:10:27.211Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:10:29.561Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:10:34.910Z"}
+{"level":"info","message":"req body undefined","service":"identity-service","timestamp":"2025-08-10T13:10:34.910Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:10:34.943Z"}
+{"level":"error","message":"TypeError: Logger.error is not a function\n    at signUP (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/src/controller/identityControler.js:44:16)\n    at Layer.handleRequest (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/layer.js:152:17)\n    at next (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/route.js:117:3)\n    at handle (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/layer.js:152:17)\n    at /home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:295:15\n    at processParams (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:582:12)\n    at next (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:291:5)\n    at Function.handle (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:186:3)","service":"identity-service","timestamp":"2025-08-10T13:10:34.945Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:11:37.937Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:11:40.552Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:11:42.984Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:11:44.247Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:12:06.618Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:12:07.795Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:12:34.688Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:12:36.377Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:12:43.485Z"}
+{"level":"info","message":"req body undefined","service":"identity-service","timestamp":"2025-08-10T13:12:43.487Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:12:43.518Z"}
+{"level":"error","message":"Unhandled Rejection at: api/auth/error ","service":"identity-service","timestamp":"2025-08-10T13:12:43.519Z"}
+{"level":"error","message":"TypeError: res.status(...).jsom is not a function\n    at signUP (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/src/controller/identityControler.js:48:32)\n    at Layer.handleRequest (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/layer.js:152:17)\n    at next (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/route.js:117:3)\n    at handle (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/lib/layer.js:152:17)\n    at /home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:295:15\n    at processParams (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:582:12)\n    at next (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:291:5)\n    at Function.handle (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/router/index.js:186:3)","service":"identity-service","timestamp":"2025-08-10T13:12:43.523Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:13:13.783Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:13:15.072Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:13:22.636Z"}
+{"level":"info","message":"req body undefined","service":"identity-service","timestamp":"2025-08-10T13:13:22.637Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:13:22.658Z"}
+{"level":"error","message":"Unhandled Rejection at: api/auth/error ","service":"identity-service","timestamp":"2025-08-10T13:13:22.659Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:22:10.704Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:22:12.995Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:22:21.951Z"}
+{"level":"info","message":"req body undefined","service":"identity-service","timestamp":"2025-08-10T13:22:21.952Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:22:21.974Z"}
+{"level":"error","message":"Unhandled Rejection at: api/auth/error ","service":"identity-service","timestamp":"2025-08-10T13:22:21.974Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:23:34.850Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:23:38.186Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:23:49.752Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:23:50.716Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:23:59.907Z"}
+{"level":"info","message":"req body undefined","service":"identity-service","timestamp":"2025-08-10T13:23:59.908Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:23:59.944Z"}
+{"level":"error","message":"Unhandled Rejection at: api/auth/error ","service":"identity-service","timestamp":"2025-08-10T13:23:59.945Z"}
+{"level":"error","message":"SyntaxError: Unexpected token u in JSON at position 6\n    at JSON.parse (<anonymous>)\n    at parse (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/body-parser/lib/types/json.js:77:19)\n    at /home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/body-parser/lib/read.js:123:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/raw-body/index.js:238:16)\n    at done (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:517:28)\n    at endReadableNT (node:internal/streams/readable:1400:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","service":"identity-service","timestamp":"2025-08-10T13:25:03.614Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:26:34.583Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:26:36.265Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:26:38.728Z"}
+{"level":"error","message":"SyntaxError: Unexpected token u in JSON at position 6\n    at JSON.parse (<anonymous>)\n    at parse (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/body-parser/lib/types/json.js:77:19)\n    at /home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/body-parser/lib/read.js:123:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/raw-body/index.js:238:16)\n    at done (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/home/vishu/Desktop/node.js/09SocialMedia-microServices/identity-service/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:517:28)\n    at endReadableNT (node:internal/streams/readable:1400:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","service":"identity-service","timestamp":"2025-08-10T13:26:45.533Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:26:55.520Z"}
+{"level":"info","message":"req body [object Object]","service":"identity-service","timestamp":"2025-08-10T13:26:55.520Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:26:55.549Z"}
+{"level":"error","message":"Unhandled Rejection at: api/auth/error ","service":"identity-service","timestamp":"2025-08-10T13:26:55.551Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:27:53.135Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:27:55.537Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:28:00.371Z"}
+{"level":"info","message":"req body [object Object]","service":"identity-service","timestamp":"2025-08-10T13:28:00.376Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:28:00.398Z"}
+{"level":"error","message":"Unhandled Rejection at: api/auth/error ","service":"identity-service","timestamp":"2025-08-10T13:28:00.412Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:28:43.127Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:28:44.309Z"}
+{"level":"info","message":"recevid POST request to /api/auth/signup","service":"identity-service","timestamp":"2025-08-10T13:28:52.924Z"}
+{"level":"info","message":"req body [object Object]","service":"identity-service","timestamp":"2025-08-10T13:28:52.925Z"}
+{"level":"info","message":"userSignup api hit ","service":"identity-service","timestamp":"2025-08-10T13:28:52.953Z"}
+{"level":"error","message":"Unhandled Rejection at: api/auth/error ","service":"identity-service","timestamp":"2025-08-10T13:28:53.069Z"}
+{"level":"info","message":"identity serviece running on port 4001","service":"identity-service","timestamp":"2025-08-10T13:29:34.378Z"}
+{"level":"info","message":"conntect data base","service":"identity-service","timestamp":"2025-08-10T13:29:36.697Z"}
