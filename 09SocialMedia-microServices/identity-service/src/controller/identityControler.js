@@ -22,19 +22,18 @@ try{
 
     //                 })
     //             }
-                        const {email , password , username}= req.body
-                        let user = await User.findOne({$or: [{email} ,{username}]})
-                        if(user){
+                        const {email , password , userName}= req.body
+let user1 = await User.findOne({ $or: [ { email: email }, { username: userName } ] });                        if(user1){
                             logger.warn("user already exists")
                             return res.status(400).json({
                                 message:"user alerady exits"
                             })
 
                         }
-                        user = new User.$where({email,password ,username})
-                        await user.save()
-                        logger.warn("user saved successfully", user._id)
-
+                          let  user = new User({email, password, userName})
+                            await user.save()
+                            logger.warn("user saved successfully", user?._id)
+                                console.log(user,"sfcdsvdfsvdfs")
                     const {accessToken,refreshToken}= await genrateToken(user)
 
                                 res.status(201).json({
@@ -49,7 +48,7 @@ try{
 
        logger.error(
         `Unhandled Rejection at: api/auth/error `,
-     
+     7
     )
         return res.status(500).json( {message: "server error " ,error:error.message})
         

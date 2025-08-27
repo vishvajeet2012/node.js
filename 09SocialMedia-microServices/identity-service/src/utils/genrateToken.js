@@ -5,7 +5,7 @@ const crypto = require("crypto");
 const genrateToken = async (user)=>{
     const accessToken = jwt.sign({
         userId:user,_id,
-        username: user.username
+        userName: user.userName
     },process.env.JWT_KEY, {expiresIn:"60m"})
 
 
